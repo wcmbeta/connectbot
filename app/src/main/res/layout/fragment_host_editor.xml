@@ -22,7 +22,7 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:fillViewport="true"
-	tools:context="org.connectbot.HostEditorFragment"
+	tools:context="water.connectbot.HostEditorFragment"
 	>
 
 	<LinearLayout
@@ -180,7 +180,45 @@
 			</android.support.design.widget.TextInputLayout>
 
 		</LinearLayout>
+		<RelativeLayout
+			android:id="@+id/password_item"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			>
 
+			<ImageView
+				android:layout_width="24dp"
+				android:layout_height="24dp"
+				app:srcCompat="@drawable/ic_vpn_key"
+				android:contentDescription="@null"
+				style="@style/ListItemIcon"
+				/>
+
+			<android.support.design.widget.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="16dp"
+				android:layout_marginLeft="68dp"
+				android:layout_marginRight="16dp"
+				android:layout_marginStart="68dp"
+				android:accessibilityLiveRegion="polite"
+				android:contentDescription="@string/hostpref_nickname_title"
+				android:labelFor="@+id/password_field"
+				tools:ignore="UnusedAttribute"
+				>
+
+				<android.support.design.widget.TextInputEditText
+					android:id="@id/password_field"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:maxLines="1"
+					android:inputType="textPassword"
+					android:hint="@string/prompt_password"
+					/>
+
+			</android.support.design.widget.TextInputLayout>
+
+		</RelativeLayout>
 		<RelativeLayout
 			android:id="@+id/nickname_item"
 			android:layout_width="match_parent"
@@ -414,7 +452,7 @@
 
 		</RelativeLayout>
 
-		<org.connectbot.views.CheckableMenuItem
+		<water.connectbot.views.CheckableMenuItem
 			android:id="@+id/use_ssh_auth_item"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
@@ -422,7 +460,7 @@
 			android:title="@string/hostpref_authagent_title"
 			/>
 
-		<org.connectbot.views.CheckableMenuItem
+		<water.connectbot.views.CheckableMenuItem
 			android:id="@+id/ssh_auth_confirmation_item"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
@@ -430,7 +468,7 @@
 			android:visibility="gone"
 			/>
 
-		<org.connectbot.views.CheckableMenuItem
+		<water.connectbot.views.CheckableMenuItem
 			android:id="@+id/compression_item"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
@@ -439,7 +477,7 @@
 			app:summary="@string/hostpref_compression_summary"
 			/>
 
-		<org.connectbot.views.CheckableMenuItem
+		<water.connectbot.views.CheckableMenuItem
 			android:id="@+id/start_shell_item"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
@@ -448,7 +486,7 @@
 			app:summary="@string/hostpref_wantsession_summary"
 			/>
 
-		<org.connectbot.views.CheckableMenuItem
+		<water.connectbot.views.CheckableMenuItem
 			android:id="@+id/stay_connected_item"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
@@ -457,7 +495,7 @@
 			app:summary="@string/hostpref_stayconnected_summary"
 			/>
 
-		<org.connectbot.views.CheckableMenuItem
+		<water.connectbot.views.CheckableMenuItem
 			android:id="@+id/close_on_disconnect_item"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"

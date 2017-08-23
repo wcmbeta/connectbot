@@ -281,4 +281,5 @@
   <string name="key_type_ed25519">Ed25519</string>
   <string name="key_type_unknown">未知的密钥类型</string>
   <string name="key_attribute_encrypted">（暗号化）</string>
+	<string name="prompt_use_saved_password">使用保存的密码？</string>
 </resources>

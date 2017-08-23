@@ -42,7 +42,15 @@
 			android:paddingTop="2dip"
 			android:text="@string/msg_version"
 			android:textAppearance="?android:attr/textAppearanceSmall"/>
-
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="end"
+			android:paddingEnd="2dip"
+			android:paddingRight="2dip"
+			android:paddingTop="2dip"
+			android:text="email:water471871679@gmail.com"
+			android:textAppearance="?android:attr/textAppearanceSmall"/>
 		<TextView
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content"

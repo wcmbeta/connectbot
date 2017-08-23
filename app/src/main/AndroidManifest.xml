@@ -16,7 +16,7 @@
  limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="org.connectbot"
+	package="water.connectbot"
 	android:installLocation="auto">
 
 	<uses-sdk />
@@ -70,7 +70,7 @@
 
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value="org.connectbot.HostListActivity"/>
+				android:value="water.connectbot.HostListActivity"/>
 		</activity>
 
 		<activity
@@ -80,7 +80,7 @@
 
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value="org.connectbot.PubkeyListActivity"/>
+				android:value="water.connectbot.PubkeyListActivity"/>
 		</activity>
 
 		<activity
@@ -89,7 +89,7 @@
 
 			<meta-data
 					android:name="android.support.PARENT_ACTIVITY"
-					android:value="org.connectbot.HostListActivity"/>
+					android:value="water.connectbot.HostListActivity"/>
 		</activity>
 
 		<activity
@@ -99,7 +99,7 @@
 
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value="org.connectbot.HostListActivity"/>
+				android:value="water.connectbot.HostListActivity"/>
 		</activity>
 
 		<activity
@@ -109,7 +109,7 @@
 
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value="org.connectbot.HostListActivity"/>
+				android:value="water.connectbot.HostListActivity"/>
 		</activity>
 
 		<activity
@@ -119,7 +119,7 @@
 
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value="org.connectbot.HostListActivity"/>
+				android:value="water.connectbot.HostListActivity"/>
 		</activity>
 
 		<activity
@@ -129,7 +129,7 @@
 
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value="org.connectbot.HostListActivity"/>
+				android:value="water.connectbot.HostListActivity"/>
 		</activity>
 
 		<activity
@@ -139,7 +139,7 @@
 
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value="org.connectbot.HelpActivity"/>
+				android:value="water.connectbot.HelpActivity"/>
 		</activity>
 
 		<activity
@@ -148,11 +148,11 @@
 
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value="org.connectbot.HelpActivity"/>
+				android:value="water.connectbot.HelpActivity"/>
 		</activity>
 
 		<service
-			android:name="org.connectbot.service.TerminalManager"
+			android:name="water.connectbot.service.TerminalManager"
 			android:configChanges="keyboardHidden|orientation"
 			android:description="@string/service_desc"/>
 
@@ -177,9 +177,12 @@
 			</intent-filter>
 		</activity>
 
+		<!--<meta-data-->
+			<!--android:name="com.google.android.backup.api_key"-->
+			<!--android:value="AEdPqrEAAAAIDlFz9nSUr2g0gSytW0t2cNnYAGHDkptlVohsBA"/>-->
 		<meta-data
 			android:name="com.google.android.backup.api_key"
-			android:value="AEdPqrEAAAAIDlFz9nSUr2g0gSytW0t2cNnYAGHDkptlVohsBA"/>
+			android:value="AEdPqrEAAAAIUbF-zOkkgDZl74srdxDW6K5c7SiDj3T91OY2zQ"/>
 
 	</application>
 </manifest>

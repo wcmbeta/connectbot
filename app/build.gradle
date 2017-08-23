@@ -5,7 +5,7 @@ buildscript {
 
     dependencies {
         classpath 'org.kt3k.gradle.plugin:coveralls-gradle-plugin:2.6.3'
-        classpath 'com.android.tools.build:gradle:2.3.0'
+        classpath 'com.android.tools.build:gradle:2.3.2'
         classpath 'com.github.gfx.ribbonizer:plugin:0.5.0'
         classpath 'com.trickyandroid:jacoco-everywhere:0.2.1'
         if (rootProject.hasProperty('jacocoVersion')) {
@@ -45,7 +45,7 @@ coveralls.jacocoReportPath = 'build/reports/coverage/google/debug/report.xml'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion "25.0.3"
 
     dexOptions {
         // Skip pre-dexing when running on a CI or when disabled via -Dpre-dex=false
@@ -53,9 +53,9 @@ android {
     }
 
     defaultConfig {
-        applicationId "org.connectbot"
-        versionName "1.9.2"
-        versionCode 19200
+        applicationId "water.connectbot"
+        versionName "1.9.2+"
+        versionCode 19220
 
         minSdkVersion 9
         targetSdkVersion 23
@@ -66,7 +66,7 @@ android {
             abiFilters 'x86', 'x86_64', 'armeabi', 'armeabi-v7a', 'arm64-v8a', 'mips'
         }
 
-        testApplicationId "org.connectbot.tests"
+        testApplicationId "water.connectbot.tests"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
